@@ -7,16 +7,16 @@
 \newif\if@print
 \newif\if@roman
 \@romantrue
-%\newif\if@whitetitle
-% \newif\if@whitelogo
+\newif\if@whitetitle
+\newif\if@whitelogo
 \DeclareOption{dutch}{\@dutchtrue\@englishfalse}
 \DeclareOption{roman}{\@romantrue}
 \DeclareOption{noroman}{\@romanfalse}
 \DeclareOption{english}{\@dutchfalse\@englishtrue}
 \DeclareOption{nativefonts}{\@nativefontstrue}
 \DeclareOption{print}{\@printtrue}
-%\DeclareOption{whitetitle}{\@whitetitletrue}
-% \DeclareOption{whitelogo}{\@whitelogotrue}
+\DeclareOption{whitetitle}{\@whitetitletrue}
+\DeclareOption{whitelogo}{\@whitelogotrue}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ExecuteOptions{english}
 \ProcessOptions\relax
@@ -221,19 +221,19 @@
 \definecolor{tudelft-yellow}{cmyk}{0.02,0,0.54,0}
 
 \def\@pagecolor{tudelft-cyan}
-%\if@whitetitle
-%  \def\titlecolor{tudelft-white}
-%\else   
-%  \def\titlecolor{tudelft-black}
-%\fi
+\if@whitetitle
+ \def\titlecolor{tudelft-white}
+\else   
+ \def\titlecolor{tudelft-black}
+\fi
 
 %% Use TU Delft cyan as the color for titles, unless the 'print' option is
 %% specified. % JMT changed this: all titles black!
-% \if@print
+\if@print
     \colorlet{title}{black}
-%\else
-%    \colorlet{title}{tudelft-cyan}
-%\fi
+\else
+   \colorlet{title}{tudelft-cyan}
+\fi
 
 %% We use A4 paper with slightly smaller margins than the default (scale = 0.7).
 \geometry{a4paper,hscale=0.75,vscale=0.8}

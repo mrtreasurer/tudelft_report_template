@@ -11,6 +11,10 @@
 *.cb
 *.cb2
 .*.lb
+*.loc
+
+## don't commit pdf
+*.pdf
 
 ## Intermediate documents:
 *.dvi
