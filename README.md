@@ -56,3 +56,14 @@ template:
 
   maybe also texlive-lang-english
 
+use this repo as a submodule by calling 
+git submodule add -link-
+
+copy report.tex for reference root file. You can also copy title.tex and other example files if so desired
+
+create a symbolic link from the .cls file, font and (if used) cover directories to root of current project directory
+
+ln -s /path/to/repo/tudelft_report_template/fonts/ /path/to/repo/fonts
+ln -s ./tudelft_report_template/tudelft-report.cls
+
+when using vs code, you can also link the .vscode directory which contains the build order for the template using xelatex. This overwrites latex-workshop's provided recipes and requires a reload of the window and the extension.

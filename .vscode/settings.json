@@ -9,12 +9,23 @@
                 "-halt-on-error",
                 "%DOC%"
             ]
-        }
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+              "%DOC%"
+            ],
+            "env": {}
+          }
     ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "xelatex",
+            "name": "xelatex + bibtex",
             "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
                 "xelatex"
             ]
         }
