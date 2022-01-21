@@ -1,5 +1,5 @@
 {
-    "latex-workshop.latex.recipe.default": "xelatex",
+    "latex-workshop.latex.recipe.default": "xelatex + bibtex + 2x xelatex",
     "latex-workshop.latex.tools": [
         {
             "name": "xelatex",
@@ -21,12 +21,24 @@
     ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "xelatex + bibtex",
+            "name": "xelatex + bibtex + 2x xelatex",
             "tools": [
                 "xelatex",
                 "bibtex",
                 "xelatex",
                 "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "tools": [
+                "bibtex"
             ]
         }
     ]

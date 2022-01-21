@@ -63,7 +63,7 @@ This repository can be used as a template for multiple reports. When set up corr
 
 4. Copy `report.tex` from the template repository's subdirectory to use as the root file for your project. Similarly, you can copy `title.tex` and other example files if needed.
 
-5. Create a symbolic link from the `.cls` in the subdirectory to your project root folder. From the project root folder, run
+5. Create a symbolic link from the `.cls` and `.bst` files in the subdirectory to your project root folder. From the project root folder, run
 
   ```
   ln -s ./tudelft_report_template/tudelft-report.cls .
