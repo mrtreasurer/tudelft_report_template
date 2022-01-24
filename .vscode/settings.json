@@ -22,8 +22,11 @@
         },
         {
             "name": "zotero",
-            "command": "zotero.py",
-            "args": [],
+            "command": "bash",
+            "args": [
+                "-i",
+                "zotero.sh"
+            ],
             "env": {}
         }
     ],
@@ -31,8 +34,8 @@
         {
             "name": "xelatex + bibtex + 2x xelatex",
             "tools": [
+                // "zotero",
                 "xelatex",
-                "zotero",
                 "bibtex",
                 "xelatex",
                 "xelatex"
