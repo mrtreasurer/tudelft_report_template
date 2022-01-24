@@ -7,23 +7,32 @@
             "args": [
                 "-interaction=nonstopmode",
                 "-halt-on-error",
+                "-file-line-error",
                 "%DOC%"
-            ]
+            ],
+            "env": {}
         },
         {
             "name": "bibtex",
             "command": "bibtex",
             "args": [
-              "%DOC%"
+              "%DOCFILE%"
             ],
             "env": {}
-          }
+        },
+        {
+            "name": "zotero",
+            "command": "zotero.py",
+            "args": [],
+            "env": {}
+        }
     ],
     "latex-workshop.latex.recipes": [
         {
             "name": "xelatex + bibtex + 2x xelatex",
             "tools": [
                 "xelatex",
+                "zotero",
                 "bibtex",
                 "xelatex",
                 "xelatex"
