@@ -21,6 +21,16 @@
             "env": {}
         },
         {
+            "name": "nomencl",
+            "command": "makeindex",
+            "args": [
+                "%DOCFILE%.nlo",
+                "-s nomencl.ist",
+                "-o %DOCFILE%.nls"
+            ],
+            "env": {}
+        },
+        {
             "name": "zotero",
             "command": "bash",
             "args": [
@@ -36,6 +46,7 @@
             "tools": [
                 // "zotero",
                 "xelatex",
+                // "nomencl",
                 "bibtex",
                 "xelatex",
                 "xelatex"
