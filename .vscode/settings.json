@@ -1,5 +1,8 @@
 {
     "latex-workshop.latex.recipe.default": "xelatex + bibtex + 2x xelatex",
+    // "latex-workshop.latex.watch.files.ignore": [
+    //     "*.bib"
+    // ],
     "latex-workshop.latex.tools": [
         {
             "name": "xelatex",
@@ -44,7 +47,7 @@
         {
             "name": "xelatex + bibtex + 2x xelatex",
             "tools": [
-                // "zotero",
+                "zotero",
                 "xelatex",
                 // "nomencl",
                 "bibtex",

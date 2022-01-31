@@ -8,4 +8,4 @@ with open("zotero.json") as f:
 
 zot = zotero.Zotero(vars["user_id"], "user", vars["api_key"])
 with open(vars["output"], "w") as f:
-    dump(zot.collection_items(vars["collection_id"], format="bibtex"), f)
+    dump(zot.everything(zot.collection_items(vars["collection_id"], format="bibtex")), f)

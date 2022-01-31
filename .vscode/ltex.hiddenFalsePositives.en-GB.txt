@@ -1,1 +1,0 @@
-{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[tudelft-white]Flow Measurement Techniques [tudelft-black]An Overview of Applicable Measurement Techniques for the New DCSC Wind Tunnel [tudelft-white]Bert Van den Abbeele Technische Universiteit Delft cover/tank.jpg [tudelft-white] tudelft-cyan [split]\\E$"}
